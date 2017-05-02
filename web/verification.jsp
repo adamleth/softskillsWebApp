@@ -4,48 +4,35 @@
     Author     : Ejer
 --%>
 
+<%@page import="WebServiceClient.ServerI"%>
+<%@page import="javax.xml.ws.Service"%>
+<%@page import="javax.xml.namespace.QName"%>
+<%@page import="java.net.URL"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>  
-        <% boolean login = true; %>
-        <% String user, pass; %>
+    <head><title>verification</title></head>
+    <body>
         <%
-            user = request.getParameter("user");
-            pass = request.getParameter("pass");
-            %>
-        <%-- start web service invocation --%><hr/>
-    <%
-    try {
-	WebServiceClient.ServermanagerService service = new WebServiceClient.ServermanagerService();
-	WebServiceClient.ServerI port = service.getServermanagerPort();
-	 // TODO initialize WS operation arguments here
-	java.lang.String arg0 = "user";
-	java.lang.String arg1 = "pass";
-	// TODO process result here
-	boolean result = port.login(arg0, arg1);
-        login = result;
-	out.println("Result = "+result);
-    } catch (Exception ex) {
-	// TODO handle custom exceptions here
-    }
-    
-    %>
-  
-    <%-- end web service invocation --%><hr/>
-     <%
-        if(login == true)
-        {%>
-        <jsp:forward page="welcome.jsp"/>
-        <%} else
-        {%>
-        Wrong username or password - try again.
-        <jsp:include page="index.jsp"/>
-        <%}%>
-    
-        </body>
+            URL url = new URL("http://ubuntu4.javabog.dk:9959/softskills?wsdl");
+            QName qname = new QName("http://Service/", "ServermanagerService");
+            Service service = Service.create(url, qname);
+            ServerI g = service.getPort(ServerI.class);
+            
+            if (g.login(request.getParameter("arg0"), request.getParameter("arg1"))) {
+                session.setAttribute("logget ind", "ja");
+                out.println("Du er logget korrekt ind.<br>");
+                response.sendRedirect("index.jsp");
+            }
+            
+            else {
+                // fjern attributten "logget ind" fra sessionen
+                session.removeAttribute("logget ind");
+                out.println("Forkert brugernavn eller adgangskode.<br>");
+
+            }
+        %>    
+
+
+    </body>
 </html>

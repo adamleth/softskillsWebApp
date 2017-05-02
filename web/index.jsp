@@ -7,15 +7,17 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
+    <head><title>login1</title></head>
     <body>
-        <h1>Hello World!</h1>
-        <form action="verification.jsp" method="get">
-            Enter username : <input type="text" name="user"/>
-            <br/>Enter password : <input type="password" name="pass"/>
-            <br/><input type="submit"/>
+        <h1>Log ind</h1>
+
+        <form method="post" action="verification.jsp">
+            Brugernavn: 
+            <input type="text" name="username">      <br>
+            Adgangskode:
+            <input type="password" name="password"> <br>
+            <input type="submit" value="Log ind">
+        </form>
+
     </body>
 </html>
