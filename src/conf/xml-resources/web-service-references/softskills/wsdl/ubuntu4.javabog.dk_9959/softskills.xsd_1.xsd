@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://Service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Service/">
+
+<xs:element name="CheckConnection" type="tns:CheckConnection"></xs:element>
+
+<xs:element name="CheckConnectionResponse" type="tns:CheckConnectionResponse"></xs:element>
+
+<xs:element name="Exception" type="tns:Exception"></xs:element>
+
+<xs:element name="addProductToUser" type="tns:addProductToUser"></xs:element>
+
+<xs:element name="addProductToUserResponse" type="tns:addProductToUserResponse"></xs:element>
+
+<xs:element name="addToResults" type="tns:addToResults"></xs:element>
+
+<xs:element name="addToResultsResponse" type="tns:addToResultsResponse"></xs:element>
+
+<xs:element name="addToSafe" type="tns:addToSafe"></xs:element>
+
+<xs:element name="addToSafeResponse" type="tns:addToSafeResponse"></xs:element>
+
+<xs:element name="createGroup" type="tns:createGroup"></xs:element>
+
+<xs:element name="createGroupResponse" type="tns:createGroupResponse"></xs:element>
+
+<xs:element name="deleteGroup" type="tns:deleteGroup"></xs:element>
+
+<xs:element name="deleteGroupResponse" type="tns:deleteGroupResponse"></xs:element>
+
+<xs:element name="getAdministrativ" type="tns:getAdministrativ"></xs:element>
+
+<xs:element name="getAdministrativResponse" type="tns:getAdministrativResponse"></xs:element>
+
+<xs:element name="getAllUsers" type="tns:getAllUsers"></xs:element>
+
+<xs:element name="getAllUsersResponse" type="tns:getAllUsersResponse"></xs:element>
+
+<xs:element name="getEmail" type="tns:getEmail"></xs:element>
+
+<xs:element name="getEmailResponse" type="tns:getEmailResponse"></xs:element>
+
+<xs:element name="getFirstRun" type="tns:getFirstRun"></xs:element>
+
+<xs:element name="getFirstRunResponse" type="tns:getFirstRunResponse"></xs:element>
+
+<xs:element name="getFullName" type="tns:getFullName"></xs:element>
+
+<xs:element name="getFullNameResponse" type="tns:getFullNameResponse"></xs:element>
+
+<xs:element name="getGroup" type="tns:getGroup"></xs:element>
+
+<xs:element name="getGroupResponse" type="tns:getGroupResponse"></xs:element>
+
+<xs:element name="getInverter" type="tns:getInverter"></xs:element>
+
+<xs:element name="getInverterResponse" type="tns:getInverterResponse"></xs:element>
+
+<xs:element name="getName" type="tns:getName"></xs:element>
+
+<xs:element name="getNameResponse" type="tns:getNameResponse"></xs:element>
+
+<xs:element name="getNotifikationer" type="tns:getNotifikationer"></xs:element>
+
+<xs:element name="getNotifikationerResponse" type="tns:getNotifikationerResponse"></xs:element>
+
+<xs:element name="getRetning" type="tns:getRetning"></xs:element>
+
+<xs:element name="getRetningResponse" type="tns:getRetningResponse"></xs:element>
+
+<xs:element name="getSafe" type="tns:getSafe"></xs:element>
+
+<xs:element name="getSafeResponse" type="tns:getSafeResponse"></xs:element>
+
+<xs:element name="getSafeSize" type="tns:getSafeSize"></xs:element>
+
+<xs:element name="getSafeSizeResponse" type="tns:getSafeSizeResponse"></xs:element>
+
+<xs:element name="getSurName" type="tns:getSurName"></xs:element>
+
+<xs:element name="getSurNameResponse" type="tns:getSurNameResponse"></xs:element>
+
+<xs:element name="hentResults" type="tns:hentResults"></xs:element>
+
+<xs:element name="hentResultsResponse" type="tns:hentResultsResponse"></xs:element>
+
+<xs:element name="login" type="tns:login"></xs:element>
+
+<xs:element name="loginResponse" type="tns:loginResponse"></xs:element>
+
+<xs:element name="retrieveSafeObjects" type="tns:retrieveSafeObjects"></xs:element>
+
+<xs:element name="retrieveSafeObjectsResponse" type="tns:retrieveSafeObjectsResponse"></xs:element>
+
+<xs:element name="setAdministrativ" type="tns:setAdministrativ"></xs:element>
+
+<xs:element name="setAdministrativResponse" type="tns:setAdministrativResponse"></xs:element>
+
+<xs:element name="setEmail" type="tns:setEmail"></xs:element>
+
+<xs:element name="setEmailResponse" type="tns:setEmailResponse"></xs:element>
+
+<xs:element name="setFirstRun" type="tns:setFirstRun"></xs:element>
+
+<xs:element name="setFirstRunResponse" type="tns:setFirstRunResponse"></xs:element>
+
+<xs:element name="setInverter" type="tns:setInverter"></xs:element>
+
+<xs:element name="setInverterResponse" type="tns:setInverterResponse"></xs:element>
+
+<xs:element name="setName" type="tns:setName"></xs:element>
+
+<xs:element name="setNameResponse" type="tns:setNameResponse"></xs:element>
+
+<xs:element name="setNotifikationer" type="tns:setNotifikationer"></xs:element>
+
+<xs:element name="setNotifikationerResponse" type="tns:setNotifikationerResponse"></xs:element>
+
+<xs:element name="setRetning" type="tns:setRetning"></xs:element>
+
+<xs:element name="setRetningResponse" type="tns:setRetningResponse"></xs:element>
+
+<xs:element name="setSafe" type="tns:setSafe"></xs:element>
+
+<xs:element name="setSafeResponse" type="tns:setSafeResponse"></xs:element>
+
+<xs:element name="setfullName" type="tns:setfullName"></xs:element>
+
+<xs:element name="setfullNameResponse" type="tns:setfullNameResponse"></xs:element>
+
+<xs:complexType name="setEmail">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setEmailResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGroup">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:group" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="group">
+<xs:sequence>
+<xs:element name="members" type="tns:user" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="name" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="size" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="user">
+<xs:sequence>
+<xs:element name="administrativ" type="xs:boolean"></xs:element>
+<xs:element name="email" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="inverter" type="xs:boolean"></xs:element>
+<xs:element name="notifikationer" type="xs:boolean"></xs:element>
+<xs:element name="retning" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="safe" type="tns:safe" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="safe">
+<xs:sequence>
+<xs:element name="unusedBelbinItems" type="tns:belbin" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="unusedDiscItems" type="tns:disc" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="unusedThreeSixtyItems" type="tns:threesixty" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="usedBelbinItems" type="tns:belbin" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="usedDiscItems" type="tns:disc" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="usedThreeSixtyItems" type="tns:threesixty" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="belbin">
+<xs:complexContent>
+<xs:extension base="tns:abstractItem">
+<xs:sequence>
+<xs:element name="totalQuestions" type="xs:int"></xs:element>
+<xs:element name="nextQuestion" type="tns:question" minOccurs="0"></xs:element>
+<xs:element name="CF" type="xs:int"></xs:element>
+<xs:element name="CO" type="xs:int"></xs:element>
+<xs:element name="DROP" type="xs:int"></xs:element>
+<xs:element name="IMP" type="xs:int"></xs:element>
+<xs:element name="ME" type="xs:int"></xs:element>
+<xs:element name="PL" type="xs:int"></xs:element>
+<xs:element name="questions" type="tns:question" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="RI" type="xs:int"></xs:element>
+<xs:element name="SH" type="xs:int"></xs:element>
+<xs:element name="SP" type="xs:int"></xs:element>
+<xs:element name="TW" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="abstractItem" abstract="true">
+<xs:sequence>
+<xs:element name="cost" type="xs:double"></xs:element>
+<xs:element name="isUsed" type="xs:boolean"></xs:element>
+<xs:element name="firstRun" type="xs:boolean"></xs:element>
+<xs:element name="type" type="tns:testType" minOccurs="0"></xs:element>
+<xs:element name="productName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="description" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="Complete" type="xs:int"></xs:element>
+<xs:element name="expirationDate" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="finishedDate" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="owner" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="testType" type="tns:testType" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="question">
+<xs:sequence>
+<xs:element name="type" type="tns:questionType" minOccurs="0"></xs:element>
+<xs:element name="question" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="disc">
+<xs:complexContent>
+<xs:extension base="tns:abstractItem">
+<xs:sequence>
+<xs:element name="isUsed" type="xs:boolean"></xs:element>
+<xs:element name="totalQuestions" type="xs:int"></xs:element>
+<xs:element name="nextQuestion" type="tns:question" minOccurs="0"></xs:element>
+<xs:element name="com" type="xs:int"></xs:element>
+<xs:element name="oldQuestions" type="tns:question" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="questions" type="tns:question" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="threesixty">
+<xs:complexContent>
+<xs:extension base="tns:abstractItem">
+<xs:sequence></xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="setFirstRun">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setFirstRunResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmail">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmailResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setInverter">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setInverterResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInverter">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInverterResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CheckConnection">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CheckConnectionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllUsers">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllUsersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createGroup">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="tns:user" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="arg2" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createGroupResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFirstRun">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFirstRunResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRetning">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRetningResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSafeSize">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSafeSizeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setfullName">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setfullNameResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteGroup">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNotifikationer">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNotifikationerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addProductToUser">
+<xs:sequence>
+<xs:element name="arg0" type="tns:abstractItem" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="tns:user" minOccurs="0"></xs:element>
+<xs:element name="arg2" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addProductToUserResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveSafeObjects">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveSafeObjectsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:abstractItem" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullName">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRetning">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRetningResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAdministrativ">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAdministrativResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setNotifikationer">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setNotifikationerResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setSafe">
+<xs:sequence>
+<xs:element name="arg0" type="tns:safe" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setSafeResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setAdministrativ">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setAdministrativResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setName">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setNameResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getName">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hentResults">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hentResultsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:abstractItem" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addToSafe">
+<xs:sequence>
+<xs:element name="arg0" type="tns:abstractItem" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addToSafeResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSafe">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSafeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:safe" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSurName">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSurNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addToResults">
+<xs:sequence>
+<xs:element name="arg0" type="tns:user" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="tns:abstractItem" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addToResultsResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="questionType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="Dom"></xs:enumeration>
+<xs:enumeration value="Inf"></xs:enumeration>
+<xs:enumeration value="Sta"></xs:enumeration>
+<xs:enumeration value="Com"></xs:enumeration>
+<xs:enumeration value="PL"></xs:enumeration>
+<xs:enumeration value="RI"></xs:enumeration>
+<xs:enumeration value="CO"></xs:enumeration>
+<xs:enumeration value="SH"></xs:enumeration>
+<xs:enumeration value="ME"></xs:enumeration>
+<xs:enumeration value="TW"></xs:enumeration>
+<xs:enumeration value="IMP"></xs:enumeration>
+<xs:enumeration value="CF"></xs:enumeration>
+<xs:enumeration value="SP"></xs:enumeration>
+<xs:enumeration value="DROP"></xs:enumeration>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="testType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="DISC"></xs:enumeration>
+<xs:enumeration value="BELBIN"></xs:enumeration>
+<xs:enumeration value="THREESIXTY"></xs:enumeration>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
